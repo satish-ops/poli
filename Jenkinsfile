@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Hell00') {
+        stage('Hell') {
             steps {
                 echo 'Hello World'
             }
@@ -22,7 +22,7 @@ pipeline {
                 branch 'PR-*'
             }
             steps {
-                echo 'this only runs for pR'
+                echo 'this only runs for PR'
             }    
          }
       }
