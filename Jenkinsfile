@@ -9,7 +9,7 @@ pipeline {
             steps {
                 echo 'Hello World'
                 dir ("$back") {
-                    sh 'hello.sh'
+                    sh(script: ' hello.sh', returnStdout: true)
                 }
             }
         }
