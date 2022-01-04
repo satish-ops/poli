@@ -5,7 +5,7 @@ pipeline {
         stage('Hello') {
             steps {
                 echo 'Hello World'
-                sh 'hello.sh'
+                sh ' ${WORKSPACE}//LOKP//hello.sh'
             }
         }
     }
