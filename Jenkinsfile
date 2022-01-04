@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        def back = "${WORKSPACE}"+"\\lokp\\hello.sh"
+        def back = "${WORKSPACE}"+"\\lokp\\upload.bat"
     }
 
     stages {
@@ -9,7 +9,7 @@ pipeline {
             steps {
                 echo 'Hello World'
                 dir ("$back") {
-                    sh(script: ' hello.sh', returnStdout: true)
+                    bat 'upload.bat'
                 }
             }
         }
