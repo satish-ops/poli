@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        def back = ""${WORKSPACE}"+"\\lokp\\hello.sh"
+        def back = "${WORKSPACE}"+"\\lokp\\hello.sh"
     }
 
     stages {
