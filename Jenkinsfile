@@ -8,8 +8,7 @@ pipeline {
         stage('Hello') {
             steps {
                 echo 'Hello World'
-                dir ("$back") {
-                    bat 'upload.bat'
+                  bat "C://Users/GSATISH3/come/upload.bat"
                 }
             }
         }
