@@ -1,0 +1,1 @@
+curl.exe -v -u admin:admin --upload-file police2  http://19.199.136.133:8081/repository/come-on/
