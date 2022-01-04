@@ -8,7 +8,7 @@ pipeline {
         stage('Hello') {
             steps {
                 echo 'Hello World'
-                dir ($back) {
+                dir ("$back") {
                     sh 'hello.sh'
                 }
             }
