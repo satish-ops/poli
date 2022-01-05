@@ -1,16 +1,18 @@
-pipeline {
-    agent none 
-    stages {
-        stage(build) {
-            steps {
-                echo 'Hello, Maven'
-                sh 'mvn --version'
-            }
-        }
-        stage('Example Test') {
-            steps {
-                echo 'Hello, JDK'
-                sh 'java -version'
-            }
-        }
-    }
+pipeline{
+     agent any
+     stages{
+          stage('Stage 1'){
+              steps{
+                //Perform steps related to this stage
+                  echo 'hello'
+              }
+          }
+          stage('Stage 2'){
+              steps{
+                //Perform steps related to this stage
+                  echo 'hello'
+              }
+          }
+     }
+
+}
