@@ -9,17 +9,7 @@ pipeline{
           }
           stage('Stage 2'){
               steps{
-				  nexusArtifactUploader artifacts: [
-   [artifactId: 'dev', classifier: '', file: 'rahul.txt', type: 'txt'], 
-   [artifactId: 'dev', classifier: '', file: 'kill.zip', type: 'zip']
-], 
-credentialsId: 'come-on', 
-groupId: 'admin', 
-nexusUrl: '19.199.136.133:8080/', 
-nexusVersion: 'nexus3', 
-protocol: 'http', 
-repository: 'devops', 
-version: '2.4.4'
+	        nexusArtifactUploader artifacts: [[artifactId: 'rahul', classifier: '', file: 'rahul.txt', type: 'txt']], credentialsId: 'come-on', groupId: 'hello', nexusUrl: '19.199.136.133:8081/', nexusVersion: 'nexus3', protocol: 'http', repository: 'devops', version: '1.0.0'
                 
               }
           }
