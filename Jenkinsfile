@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'Hello World'
                 //cp "hello.sh hello1.sh"
-                bat "C://Users/GSATISH3/come/upload.bat"
+                bat "$WORKSPACE//upload.bat"
             }
         }
     }
