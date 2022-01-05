@@ -1,13 +1,16 @@
 pipeline {
-    agent any
-
+    agent none 
     stages {
-        stage('Hello') {
+        stage(build) {
             steps {
-                echo 'Hello World'
-                //cp "hello.sh hello1.sh"
-                bat "$WORKSPACE//upload.bat"
+                echo 'Hello, Maven'
+                sh 'mvn --version'
+            }
+        }
+        stage('Example Test') {
+            steps {
+                echo 'Hello, JDK'
+                sh 'java -version'
             }
         }
     }
-}
