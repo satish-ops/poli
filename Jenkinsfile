@@ -10,15 +10,15 @@ pipeline{
           stage('Stage 2'){
               steps{
 				  nexusArtifactUploader artifacts: [
-   [artifactId: 'new', classifier: '', file: 'rahul.txt', type: 'txt'], 
-   [artifactId: 'nexus-artifact-uploader', classifier: '', file: 'kill.zip', type: 'zip']
+   [artifactId: 'devops', classifier: '', file: 'rahul.txt', type: 'txt'], 
+   [artifactId: 'devops', classifier: '', file: 'kill.zip', type: 'zip']
 ], 
 credentialsId: 'come-on', 
 groupId: 'admin', 
 nexusUrl: '19.199.136.133:8080/', 
 nexusVersion: 'nexus3', 
 protocol: 'http', 
-repository: 'new', 
+repository: 'devops', 
 version: '2.4.4'
                 
               }
