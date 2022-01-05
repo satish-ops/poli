@@ -14,7 +14,7 @@ pipeline{
    [artifactId: 'nexus-artifact-uploader', classifier: '', file: 'kill.zip', type: 'zip']
 ], 
 credentialsId: 'come-on', 
-groupId: 'admin, 
+groupId: 'admin', 
 nexusUrl: '19.199.136.133:8080/', 
 nexusVersion: 'nexus3', 
 protocol: 'http', 
