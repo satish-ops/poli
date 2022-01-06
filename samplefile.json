@@ -1,0 +1,32 @@
+{
+    "VERSION": "1.0",
+	"PROJECT": "PCAR",
+    "PROJECT_LABEL": "V363_2022_BEV_4P96S",	
+    "PCAR_MODEL_NAME": "V363_2022_BEV_4P96S",
+    "PreStrategyIntegration": [
+        {
+            "PreStrategyIntegration_tmp": ["Controllers/Modules/HPCM/Main/main_TMNE0.vcxproj",
+										   "Controllers/Modules/HPCM/TMNE0.sln",
+										   "Controllers/Modules/HPCM/TMNE0/TMNE0.vcxproj",
+										   "Controllers/Modules/HPCM/TMNE0/TMNE0.vcxproj.filters",
+										   "Controllers/Modules/PCM/HBWH0.sln",
+										   "Controllers/Modules/PCM/HBWH0/HBWH0.vcxproj",
+										   "Controllers/Modules/PCM/HBWH0/HBWH0.vcxproj.filters",
+										   "Controllers/Modules/PCM/Main/main_HBWH0.vcxproj",										   
+										   "PCARModels/V363_2022_BEV_4P96S/ASAM.XIL.Testbench.HPCM.xml",
+										   "PCARModels/V363_2022_BEV_4P96S/ASAM.XIL.Testbench.MODEL.xml",
+										   "PCARModels/V363_2022_BEV_4P96S/ASAM.XIL.Testbench.PCM.xml",
+										   "PCARModels/V363_2022_BEV_4P96S/config.HBWH0_TMNE0.sil.xml",
+										   "PCARModels/V363_2022_BEV_4P96S/config.sil.xml"],
+	        "PreStrategyIntegration_Log": ["Controllers/Modules/PCM/Output/log_HBWH0.txt",
+										   "Controllers/Modules/PCM/Output/report_HBWH0.xml",
+										   "Controllers/Modules/HPCM/Output/log_TMNE0.txt",
+										   "Controllers/Modules/HPCM/Output/report_TMNE0.xml"]
+										   
+										   
+            
+        }
+        
+    ]
+
+}
