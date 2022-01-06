@@ -1,0 +1,18 @@
+{
+  "name ": "satish",
+  "order_count": "5",
+  "hey": "jay",
+  "PreStrategyIntegration_tmp": [
+    {
+      "modulename": "example1",
+      "path": "C:\\Users\\GSATISH3\\come\\satish\\example1"
+
+    },
+
+    {
+      "modulename": "example2",
+      "path": "C:\\Users\\GSATISH3\\come\\satish\\example2"
+    }
+  ]
+
+}
