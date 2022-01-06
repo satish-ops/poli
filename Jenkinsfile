@@ -11,7 +11,7 @@ pipeline{
               steps{
 		    script{
 	        def projects = readJSON file: "newone.json"
-		      println(props['PreStrategyIntegration_tmp'].keySet())
+		      echo "$projects"
 		    }
                 
               }
