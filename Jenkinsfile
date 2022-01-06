@@ -10,8 +10,8 @@ pipeline{
           stage('Stage 2'){
               steps{
 		    script{
-	               def projects = readJSON file: "newone.json"
-		       echo "projects"
+	               def projects = readJSON file: "samplefile.json"
+		       echo "$projects"
 		    }
                 
               }
