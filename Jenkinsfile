@@ -9,8 +9,10 @@ pipeline{
           }
           stage('Stage 2'){
               steps{
+		    script{
 	        def projects = readJSON file: "newone.json"
 		      println "projects"
+		    }
                 
               }
           }
