@@ -11,7 +11,8 @@ pipeline{
               steps{
 		    script{
 	               def projects = readJSON file: "samplefile.json"
-		       echo "$projects"
+		               value = "${projects.PreStrategyIntegration.PreStrategyIntegration_tmp"
+					   print (value)
 		    }
                 
               }
