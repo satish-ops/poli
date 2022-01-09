@@ -20,10 +20,10 @@ pipeline{
 					       print(type.last())
 					       ext = type.last()
 					       if(i%2 == 0){
-					           	nexusArtifactUploader artifacts: [[artifactId: value, classifier: '', file: value, type: ext]], credentialsId: 'come-on', groupId: 'hello', nexusUrl: '19.199.136.133:8081/', nexusVersion: 'nexus3', protocol: 'http', repository: 'sample', version: '2.0.0'
+					           	nexusArtifactUploader artifacts: [[artifactId: value, classifier: '', file: value, type: ext]], credentialsId: 'come-on', groupId: 'hello', nexusUrl: '19.199.136.133:8081/', nexusVersion: 'nexus3', protocol: 'http', repository: 'devops', version: '2.0.0'
 
 					       } else {
-					           nexusArtifactUploader artifacts: [[artifactId: value, classifier: '', file: value, type: ext]], credentialsId: 'come-on', groupId: 'hello', nexusUrl: '19.199.136.133:8081/', nexusVersion: 'nexus3', protocol: 'http', repository: 'sample', version: '2.0.0'
+					           nexusArtifactUploader artifacts: [[artifactId: value, classifier: '', file: value, type: ext]], credentialsId: 'come-on', groupId: 'hello', nexusUrl: '19.199.136.133:8081/', nexusVersion: 'nexus3', protocol: 'http', repository: 'devops', version: '2.0.0'
 					       }
 					   }
 		    }
