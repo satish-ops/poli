@@ -5,8 +5,8 @@
     "PCAR_MODEL_NAME": "V363_2022_BEV_4P96S",
     "PreStrategyIntegration": [
         {
-            "PreStrategyIntegration_tmp": ["C:\\Users\\GSATISH3\\come\\satish\\example1.txt",
-										   "C:\\Users\\GSATISH3\\come\\satish\\example2.txt",
+            "PreStrategyIntegration_tmp": ["C:\\Users\\GSATISH3\\come\\satish\\youcan.txt",
+										   "C:\\Users\\GSATISH3\\come\\satish\\wecan.txt",
 										   "Controllers/Modules/HPCM/TMNE0/TMNE0.vcxproj",
 										   "Controllers/Modules/HPCM/TMNE0/TMNE0.vcxproj.filters",
 										   "Controllers/Modules/PCM/HBWH0.sln",
