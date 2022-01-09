@@ -10,21 +10,19 @@ pipeline{
           stage('Stage 2'){
               steps{
 		    script{
-	               def  Projects = readJSON file: "samplefile.json"
-	                    //value = "${Projects.PreStrategyIntegration.PreStrategyIntegration_tmp[0][0]}"
-					   //print (value)
+			    // trying to read json file
+	               def  Projects = readJSON file: "samplefile.json" 
 					   for (int i = 0; i <= 12; i++){
+						   //we are trying to get the file path defined to groovy through for loop
 					       value = "${Projects.PreStrategyIntegration.PreStrategyIntegration_tmp[0][i]}"
-					       print(value)
-					       String[] type = value.split('\\.')
-					       print(type.last())
+					       String[] type = value.split('\\.')  //trying to split the array using dot value
+					       String[] parts = value.split("\\\\") //trying to Split windows path of array.
+					       println(type.last()) //which get last element
+					       println(parts[-1]) //which get filename alone from the path of the file
 					       ext = type.last()
-					       if(i%2 == 0){
-					           	nexusArtifactUploader artifacts: [[artifactId: value, classifier: '', file: value, type: ext]], credentialsId: 'come-on', groupId: 'hello', nexusUrl: '19.199.136.133:8081/', nexusVersion: 'nexus3', protocol: 'http', repository: 'devops', version: '2.0.0'
+					       love = (parts[-1])
+					           	nexusArtifactUploader artifacts: [[artifactId: love, classifier: '', file: value, type: ext]], credentialsId: 'come-on', groupId: 'give-away', nexusUrl: '19.199.136.133:8081/', nexusVersion: 'nexus3', protocol: 'http', repository: 'devops', version: ''
 
-					       } else {
-					           nexusArtifactUploader artifacts: [[artifactId: value, classifier: '', file: value, type: ext]], credentialsId: 'come-on', groupId: 'hello', nexusUrl: '19.199.136.133:8081/', nexusVersion: 'nexus3', protocol: 'http', repository: 'devops', version: '2.0.0'
-					       }
 					   }
 		    }
                 
