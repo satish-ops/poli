@@ -16,7 +16,15 @@ pipeline{
 					   for (int i = 0; i <= 12; i++){
 					       value = "${Projects.PreStrategyIntegration.PreStrategyIntegration_tmp[0][i]}"
 					       print(value)
-					       nexusArtifactUploader artifacts: [[artifactId: 'rahul', classifier: '', file: value, type: 'txt']], credentialsId: 'come-on', groupId: 'hello', nexusUrl: '19.199.136.133:8081/', nexusVersion: 'nexus3', protocol: 'http', repository: 'new', version: '2.0.0'
+					       String[] type = value.split('\\.')
+					       print(type.last())
+					       ext = type.last()
+					       if(i%2 == 0){
+					           	nexusArtifactUploader artifacts: [[artifactId: value, classifier: '', file: value, type: ext]], credentialsId: 'come-on', groupId: 'hello', nexusUrl: '19.199.136.133:8081/', nexusVersion: 'nexus3', protocol: 'http', repository: 'sample', version: '2.0.0'
+
+					       } else {
+					           nexusArtifactUploader artifacts: [[artifactId: value, classifier: '', file: value, type: ext]], credentialsId: 'come-on', groupId: 'hello', nexusUrl: '19.199.136.133:8081/', nexusVersion: 'nexus3', protocol: 'http', repository: 'sample', version: '2.0.0'
+					       }
 					   }
 		    }
                 
