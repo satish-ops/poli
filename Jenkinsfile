@@ -14,7 +14,7 @@ pipeline{
 		    script{
 			    // trying to read json file
 	               def  Projects = readJSON file: "samplefile.json" 
-					   for (int i = 0; i <= 4; i++){
+					   for (int i = 0; i <= 0; i++){
 						   //we are trying to get the file path defined to groovy through for loop
 					       value = "${Projects.PreStrategyIntegration.PreStrategyIntegration_tmp[0][i]}"
 					       String[] type = value.split('\\.')  //trying to split the array using dot value
