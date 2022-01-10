@@ -3,8 +3,10 @@ pipeline{
      stages{
           stage('Stage 1'){
               steps{
-                //Perform steps related to this stage
                   echo 'hello'
+		      script {
+			      bat 'download.bat'
+		      }
               }
           }
           stage('Stage 2'){
