@@ -6,8 +6,8 @@
     "PreStrategyIntegration": [
         {
             "PreStrategyIntegration_tmp": ["Controllers/Modules/HPCM/giveaway.xml",
-										   "Controllers/Modules/HPCM/TMNE0.sln",
-										   "Controllers/Modules/HPCM/TMNE0/TMNE0.vcxproj",
+										   "Controllers/Modules/HPCM/hello.txt",
+										   "Controllers/Modules/HPCM/TMNE0/hey.txt",
 										   "Controllers/Modules/HPCM/TMNE0/TMNE0.vcxproj.filters",
 										   "Controllers/Modules/PCM/HBWH0.sln",
 										   "Controllers/Modules/PCM/HBWH0/HBWH0.vcxproj",
