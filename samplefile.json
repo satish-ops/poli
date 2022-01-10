@@ -5,7 +5,7 @@
     "PCAR_MODEL_NAME": "V363_2022_BEV_4P96S",
     "PreStrategyIntegration": [
         {
-            "PreStrategyIntegration_tmp": ["Controllers/Modules/HPCM/rahul.txt",
+            "PreStrategyIntegration_tmp": ["Controllers/Modules/HPCM/giveaway.xml",
 										   "Controllers/Modules/HPCM/TMNE0.sln",
 										   "Controllers/Modules/HPCM/TMNE0/TMNE0.vcxproj",
 										   "Controllers/Modules/HPCM/TMNE0/TMNE0.vcxproj.filters",
