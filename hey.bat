@@ -1,4 +1,3 @@
-@echo %AME%
 
 :: BatchGotAdmin        
 :-------------------------------------        
@@ -13,18 +12,3 @@ if '%errorlevel%' NEQ '0' (    echo Requesting administrative privileges...    )
     exit /B
 :gotAdmin  
 
-
-
-                bat 'echo %AME% > AME.txt'
-                script{
-                def version = readFile "${env.WORKSPACE}/AME.txt"
-                //print(version)
-                String[] a = version.split("\\\\")
-                b =(a[-2])
-                //println(b)
-                c = version.replace(b , "20.1")
-                print(c)
-
-setx -m AME "C:\Users\PKS1\AppData\Roaming\winbin\lms\amesim\15.1\vendor"
-
-pause
