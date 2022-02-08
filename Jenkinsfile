@@ -7,9 +7,9 @@ environment {
         stage('Hello') {
             steps {
                 script {
-                echo "${scmUrl}"
-                url = bat(returnStdout: true, script: 'git config remote.origin.url').trim()
-                println(url)
+                //echo "${scmUrl}"
+                def scmUrl = bat scm.getUserRemoteConfigs()[0].getUrl()
+                println(scmUrl)
                 }
             }
         }
