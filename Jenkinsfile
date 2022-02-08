@@ -6,9 +6,11 @@ environment {
     stages {
         stage('Hello') {
             steps {
+                script {
                 echo "${scmUrl}"
                 url = bat(returnStdout: true, script: 'git config remote.origin.url').trim()
                 println(url)
+                }
             }
         }
     }
