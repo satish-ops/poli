@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'Hello World'
                 script {
-                hey = bat 'scm.getUserRemoteConfigs()[0].getUrl()'
+                hey = bat "scm.getUserRemoteConfigs()[0].getUrl()"
                 print(hey)
                 }
             }
