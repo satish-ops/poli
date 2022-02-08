@@ -6,8 +6,7 @@ pipeline {
             steps {
                 echo 'Hello World'
                 script {
-                hey = ${env.GIT_URL}
-                 print(hey)
+                    echo "hey URL: ${GIT_REPO_URL}
                 }
             }
         }
