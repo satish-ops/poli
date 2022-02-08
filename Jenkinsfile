@@ -1,16 +1,22 @@
 pipeline {
     agent any
-environment {
-        def scmUrl = 'scm.getUserRemoteConfigs()[0].getUrl()'
+
+
+    parameters { 
+        string(defaultValue: "https://github.com", description: 'Whats the github URL?', name: 'URL')
     }
+
+
     stages {
-        stage('Hello') {
-            steps {
-                script {
-                //echo "${scmUrl}"
-                def scmUrl = bat scm.getUserRemoteConfigs()[0].getUrl()
-                println(scmUrl)
-                }
+        stage('Checkout Git repository') {
+           steps {
+                git branch: 'master', url: "${params.URL}"
+            }
+        }
+
+        stage('echo') {
+           steps {
+                echo "${params.URL}"
             }
         }
     }
