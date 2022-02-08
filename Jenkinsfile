@@ -6,8 +6,8 @@ pipeline {
             steps {
                 echo 'Hello World'
                 script {
-                hey = bat "scm.getUserRemoteConfigs()[0].getUrl()"
-                print(hey)
+                hey = ${env.GIT_URL}
+                 print(hey)
                 }
             }
         }
